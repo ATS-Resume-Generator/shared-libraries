@@ -1,0 +1,48 @@
+{
+  "name": "nodejs-shared-lib",
+  "version": "1.0.0",
+  "description": "A shared library for Node.js microservices providing common utilities and functionalities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "nodejs",
+    "microservices",
+    "shared-library",
+    "utilities"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "crypto": "^1.0.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.9",
+    "pdf-parse": "^1.1.1",
+    "redis": "^3.1.2",
+    "winston": "^3.3.3",
+    "mammoth": "^1.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2",
+    "jest": "^26.6.3",
+    "eslint": "^7.14.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./lib": "./lib/index.js",
+    "./middleware": "./middleware/index.js",
+    "./schemas": "./schemas/index.js",
+    "./constants": "./constants/index.js",
+    "./utils": "./utils/index.js",
+    "./types": "./types/index.d.ts"
+  }
+}
